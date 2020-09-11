@@ -1,5 +1,7 @@
 # New Project
 
+> ✨Tailwind included
+
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
 ## Available Scripts

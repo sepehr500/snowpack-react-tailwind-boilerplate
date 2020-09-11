@@ -1,14 +1,20 @@
 {
   "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "build:css && snowpack build",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^5.3.0",
+    "postcss-cli": "^7.1.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.8.8"
   },
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.10.0",
